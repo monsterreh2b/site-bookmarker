@@ -1,0 +1,33 @@
+INP	
+	remember to clear out input value via
+	const inputEl = document.getElementById("input-el")
+	inputEl.value = "";
+INT	
+	
+id="input-btn	
+	
+M	
+	
+id="displayPassword"	
+	
+	
+M	
+M	
+	
+L	
+	
+empty array
+	
+S	
+
+onclick
+
+grab input value
+
+push to array
+
+call render array function
+
+render array function is
+ -- loop thru array
+ -- eventually render to underordered list id="ul-el"
