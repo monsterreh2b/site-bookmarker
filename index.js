@@ -7,7 +7,12 @@ console.log(inputBtn);
 const ulEl = document.getElementById("ul-el");
 console.log(inputEl);
 
-const links = [];
+let links = [];
+
+
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("leads"));
+
+console.log(leadsFromLocalStorage);
 
 function renderArray() {
     let house = "";
@@ -23,5 +28,8 @@ inputBtn.addEventListener("click", function () {
     links.push(inputEl.value);
     console.log(links);
     inputEl.value = "";
+    localStorage.setItem("leads", JSON.stringify(links));
     renderArray();
+    console.log(localStorage.getItem("leads")); //pull from DB LS
 }); 
+
