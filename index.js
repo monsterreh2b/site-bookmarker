@@ -10,9 +10,9 @@ console.log(inputEl);
 let links = [];
 
 
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("leads"));
+//let leadsFromLocalStorage = JSON.parse(localStorage.getItem("leads"));
 
-console.log(leadsFromLocalStorage);
+//console.log(leadsFromLocalStorage);
 
 function renderArray() {
     let house = "";
@@ -23,6 +23,9 @@ function renderArray() {
     console.log(house);
     ulEl.innerHTML = house;
 }
+
+links = JSON.parse(localStorage.getItem("leads"));
+console.log(links);
 
 inputBtn.addEventListener("click", function () {
     links.push(inputEl.value);
