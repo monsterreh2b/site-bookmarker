@@ -24,10 +24,19 @@ function renderArray() {
     ulEl.innerHTML = house;
 }
 
-links = JSON.parse(localStorage.getItem("leads"));
-console.log(links);
+if (JSON.parse(localStorage.getItem("leads"))) {
+    links = JSON.parse(localStorage.getItem("leads"));
+    console.log(links);
+}
+else {
+    links = [];
+}
+
+
+
 
 inputBtn.addEventListener("click", function () {
+    console.log(inputEl.value);
     links.push(inputEl.value);
     console.log(links);
     inputEl.value = "";
