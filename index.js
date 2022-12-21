@@ -4,6 +4,9 @@ console.log(inputEl);
 const inputBtn = document.getElementById("input-btn");
 console.log(inputBtn);
 
+const deleteBtn = document.getElementById("delete-btn");
+console.log(deleteBtn);
+
 const ulEl = document.getElementById("ul-el");
 console.log(inputEl);
 
@@ -44,4 +47,10 @@ inputBtn.addEventListener("click", function () {
     renderArray();
     console.log(localStorage.getItem("leads")); //pull from DB LS
 }); 
+
+deleteBtn.addEventListener("click", function () {
+    localStorage.clear();
+    links = [];
+    ulEl.innerHTML = "";
+});
 
