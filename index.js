@@ -17,11 +17,11 @@ let links = [];
 
 //console.log(leadsFromLocalStorage);
 
-function renderArray() {
+function renderArray(array) {
     let house = "";
     
-    for (let i = 0; i < links.length; i++) {
-        house += `<li><a target='_blank' href='https://${links[i]}'>${links[i]}</a></li>`;
+    for (let i = 0; i < array.length; i++) {
+        house += `<li><a target='_blank' href='https://${array[i]}'>${array[i]}</a></li>`;
     }
     console.log(house);
     ulEl.innerHTML = house;
@@ -44,7 +44,7 @@ inputBtn.addEventListener("click", function () {
     console.log(links);
     inputEl.value = "";
     localStorage.setItem("leads", JSON.stringify(links));
-    renderArray();
+    renderArray(links);
     console.log(localStorage.getItem("leads")); //pull from DB LS
 }); 
 
