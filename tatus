@@ -1,0 +1,53 @@
+[33mcommit eb861c016193e20aeb4d4426b7c32255ee9dcb79[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Thu Jan 5 18:11:24 2023 -0800
+
+    current tab not working with chrome tabs query (undefined)
+
+[33mcommit 9f707dfa00637c96bcff23677c32b94e72764803[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Thu Jan 5 17:28:30 2023 -0800
+
+    add current tab button with current tab loc
+
+[33mcommit 48413f5d661ff6b78808925d09adc8da0c8d6367[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Tue Jan 3 17:38:48 2023 -0800
+
+    refactor render function to use arguments
+
+[33mcommit 2b2db413a5e97a2b8f0a1967026d3d1608b03fb7[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Wed Dec 21 14:20:59 2022 -0800
+
+    add delete functionality
+
+[33mcommit b70cbb9fea6ff93cd7122c944a9598ada74a54e3[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Wed Dec 21 14:16:42 2022 -0800
+
+    if else to account for empty local storage
+
+[33mcommit 9cc641ab85cbde7ea22bf1866d64a9494752cd65[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Tue Dec 20 20:43:03 2022 -0800
+
+    local storage with persistence after onclick
+
+[33mcommit 1aafbef4e34f2ed2db8c0cadd302c3c43e87ad55[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Tue Dec 20 16:15:48 2022 -0800
+
+    local storage but caveat no interaction
+
+[33mcommit 03740e120d8897477765b5b82d5a00137028cfc8[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Fri Dec 9 18:19:03 2022 -0800
+
+    remove unnecessary readme
+
+[33mcommit 90bc0f94874713e10a4107fa6b8c671ae446c164[m
+Author: Brant Han <sghan@jcehrlich.local>
+Date:   Fri Dec 9 18:14:31 2022 -0800
+
+    bookmarking with links functional
