@@ -57,9 +57,9 @@ inputBtn.addEventListener("click", function () {
 
 tabBtn.addEventListener("click", function () {
     // Grab the URL of the current tab!
-    console.log(window.location.toString().slice(7));
+    console.log(window.location.toString().slice(8));
     //console.log(tabs[0].url);
-    links.push(window.location.toString().slice(7));
+    links.push(window.location.toString().slice(8));
     console.log(links);
     localStorage.setItem("leads", JSON.stringify(links));
     renderArray(links);
