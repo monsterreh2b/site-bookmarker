@@ -4,6 +4,8 @@ console.log(inputEl);
 const inputBtn = document.getElementById("input-btn");
 console.log(inputBtn);
 
+const tabBtn = document.getElementById("tab-btn");
+
 const deleteBtn = document.getElementById("delete-btn");
 console.log(deleteBtn);
 
@@ -11,6 +13,11 @@ const ulEl = document.getElementById("ul-el");
 console.log(inputEl);
 
 let links = [];
+
+//const tabs = [
+    //{ url: "https://www.linkedin.com/in/per-harald-borgen/" }
+//]
+
 
 
 //let leadsFromLocalStorage = JSON.parse(localStorage.getItem("leads"));
@@ -47,6 +54,17 @@ inputBtn.addEventListener("click", function () {
     renderArray(links);
     console.log(localStorage.getItem("leads")); //pull from DB LS
 }); 
+
+tabBtn.addEventListener("click", function () {
+    // Grab the URL of the current tab!
+    console.log(window.location.toString());
+    //console.log(tabs[0].url);
+    links.push(window.location.toString());
+    console.log(links);
+    localStorage.setItem("leads", JSON.stringify(links));
+    renderArray(links);
+    console.log(localStorage.getItem("leads")); //pull from DB LS
+})
 
 deleteBtn.addEventListener("click", function () {
     localStorage.clear();
